@@ -3,11 +3,11 @@
 
 ![Meme](https://i.pinimg.com/originals/0f/c2/1f/0fc21fcd673f794c1d6222b177013342.png)
 
+<br>
+
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-
-<br>
 
 ### Installation
 ##### 1. Download the repository
@@ -16,14 +16,11 @@ Clone the base repository onto your desktop with `git` as follows:
 ```console
 $ git clone https://github.com/SwatiModi/pinterest-web-scraper
 ```
-
 ##### 2. Install necessary dependencies
 
 ```console
 $ pip install -r requirements.txt
 ```
-
-<br>
 
 ### Usage
 I have tried a example on query "mens checked shirt" and pushed the resultant csv and folder here in the repo.
