@@ -1,2 +1,2 @@
-# pinterest-web-scraper
-Scraping Visually Similar Images from Pinterest
+# PinScraper
+Pinterest Scarper for VS Pins
