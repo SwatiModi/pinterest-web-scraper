@@ -69,20 +69,24 @@ driver.implicitly_wait(30)
 driver.get(url)
 driver.implicitly_wait(30)
 
-# scroll
-driver.execute_script("window.scrollTo(0, 7000)")
-time.sleep(3)
-driver.execute_script("window.scrollTo(0, 7000)")
-time.sleep(3)
+while 1 :
+    # scroll
+    driver.execute_script("window.scrollBy(0,10000)")
+    time.sleep(3)
+    driver.execute_script("window.scrollBy(0,10000)")
+    time.sleep(3)
 
-# get the html now
-page_source = driver.page_source
-page = BeautifulSoup(page_source, 'html.parser')
+    # get the html now
+    page_source = driver.page_source
+    page = BeautifulSoup(page_source, 'html.parser')
 
-# 'GrowthUnauthPinImage' is the class of all the pins
-# Here we take divs which have a with href as pin number
-pin_data = page.find_all('div',"Yl- MIw Hb7")
-print(len(pin_data))
+    # 'GrowthUnauthPinImage' is the class of all the pins
+    # Here we take divs which have a with href as pin number
+    pin_data = page.find_all('div',"Yl- MIw Hb7")
+    print(len(pin_data))
+    if len(pin_data) > 800:
+        break
+
 
 # get links for individual pages of all the Pins
 hrefs = []
