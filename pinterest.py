@@ -30,6 +30,8 @@ if(args.CSVname):
 else:
     csv_name = item_category + '.csv'
 
+csv_name = csv_name.replace(" ", "_")
+
 if args.login_name:
 	login_name = args.login_name
 else:
