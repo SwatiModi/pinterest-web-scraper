@@ -21,6 +21,17 @@ $ git clone https://github.com/SwatiModi/pinterest-web-scraper
 ```console
 $ pip install -r requirements.txt
 ```
+##### 3. Install chrome driver
+
+```console
+$ wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip
+$ unzip chromedriver_linux64.zip
+
+$ sudo mv chromedriver /usr/bin/chromedriver
+$ sudo chown root:root /usr/bin/chromedriver
+$ sudo chmod +x /usr/bin/chromedriver
+
+```
 
 ### Usage
 I have tried a example on query "mens checked shirt" and pushed the resultant csv and folder here in the repo.
