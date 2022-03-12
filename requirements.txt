@@ -9,7 +9,7 @@ lxml==4.6.3
 np-utils==0.5.10.0 
 numpy==1.16.4   
 pandas==0.25.0   
-Pillow==8.3.2    
+Pillow==9.0.1    
 pip==21.1   
 pyparsing==2.4.1.1  
 python-dateutil==2.8.0    
